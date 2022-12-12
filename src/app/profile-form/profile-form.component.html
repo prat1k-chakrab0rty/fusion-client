@@ -1,0 +1,43 @@
+<form class="border rounded p-2 pt-4 pb-4">
+    <div class="row">
+      <div class="col pt-1">
+        <p  class="p-0 {{focusB[0]}} m-0 small pc">User Name</p>
+        <input type="text" (focus)="focus(0)" (focusout)="focusout(0)" class="custom-textfield border-top-0 border-start-0 border-end-0 rounded-0" name="email">
+      </div>
+      <div class="col pt-1">
+        <p class="p-0  {{focusB[1]}} m-0 small pc">Login Code</p>
+        <input type="email" (focus)="focus(1)" (focusout)="focusout(1)" class="custom-textfield border-top-0 border-start-0 border-end-0 rounded-0" name="pswd">
+      </div>
+    </div>
+    <div class="row">
+        <div class="col pt-1">
+          <p  class="p-0 {{focusB[2]}} m-0 small pc">Email ID</p>
+          <input type="text" (focus)="focus(2)" (focusout)="focusout(2)" class="custom-textfield border-top-0 border-start-0 border-end-0 rounded-0" name="email">
+        </div>
+        <div class="col pt-1">
+          <p class="p-0  {{focusB[3]}} m-0 small pc">Company Name</p>
+          <input type="email" (focus)="focus(3)" (focusout)="focusout(3)" class="custom-textfield border-top-0 border-start-0 border-end-0 rounded-0" name="pswd">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col pt-1">
+          <p  class="p-0 {{focusB[4]}} m-0 small pc">Address Details</p>
+          <input type="text" (focus)="focus(4)" (focusout)="focusout(4)" class="custom-textfield border-top-0 border-start-0 border-end-0 rounded-0" name="email">
+        </div>
+        <div class="col pt-1 ">
+          <p class="p-0  {{focusB[5]}} m-0 small pc">Contact Number</p>
+          <input type="email" (focus)="focus(5)" (focusout)="focusout(5)" class="custom-textfield border-top-0 border-start-0 border-end-0 rounded-0" name="pswd">
+        </div>
+      </div>
+      <div class="row">
+          <h6 class="text-primary mt-2">Update Password</h6>
+        <div class="col">
+          <p  class="p-0 {{focusB[6]}} m-0 small pc">Create new password</p>
+          <input type="text" (focus)="focus(6)" (focusout)="focusout(6)" class="custom-textfield border-top-0 border-start-0 border-end-0 rounded-0" name="email">
+        </div>
+        <div class="col">
+          <p class="p-0  {{focusB[7]}} m-0 small pc">Confirm new password</p>
+          <input type="email" (focus)="focus(7)" (focusout)="focusout(7)" class="custom-textfield border-top-0 border-start-0 border-end-0 rounded-0" name="pswd">
+        </div>
+      </div>
+</form>
