@@ -6,5 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./profile-image-selector.component.css']
 })
 export class ProfileImageSelectorComponent {
-
+  fileSelected():void {
+    var input = document.getElementById('file');
+    console.log(input );
+ }
 }
