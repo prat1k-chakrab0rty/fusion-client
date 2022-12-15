@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { TopbarComponent } from './topbar/topbar.component';
@@ -11,6 +11,8 @@ import { ProfileFormComponent } from './profile-form/profile-form.component';
 import { MyProfilePageComponent } from './my-profile-page/my-profile-page.component';
 import { RolePermissionPageComponent } from './role-permission-page/role-permission-page.component';
 import { TestComponent } from './test/test.component';
+import { ModalComponent } from './modal/modal.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -22,11 +24,14 @@ import { TestComponent } from './test/test.component';
     ProfileFormComponent,
     MyProfilePageComponent,
     RolePermissionPageComponent,
-    TestComponent
+    TestComponent,
+    ModalComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

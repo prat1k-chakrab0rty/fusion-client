@@ -1046,3 +1046,8 @@ button.btn-close {
 .pagetitle {
     margin-bottom: 10px;
 }
+
+.custom-modal{
+    position: absolute;
+    left: 30%;
+}
