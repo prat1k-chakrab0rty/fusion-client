@@ -14,8 +14,15 @@ export class DataFetchService {
   getAllUsers():Observable<User[]>{
     return this.http.get<User[]>(this.baseApiUrl+'/api/User');
   }
+  getUser(id:string):Observable<User[]>{
+    return this.http.get<User[]>(this.baseApiUrl+'/api/User/'+id);
+  }
   updateUser(updateEmployeeRequest:User):Observable<User>{
     console.log(updateEmployeeRequest);
     return this.http.put<User>(this.baseApiUrl+'/api/User/'+updateEmployeeRequest.id,updateEmployeeRequest);
+  }
+
+  getAllRoles():Observable<any[]>{
+    return this.http.get<any[]>(this.baseApiUrl+'/api/Role');
   }
 }

@@ -1,9 +1,9 @@
 export interface User{
     id:string;
-    name:string;
-    email:string;
-    company:string;
+    userName:string;
+    emailId:string;
+    companyName:string;
     address:string;
-    contact:string;
+    contactNumber:string;
     password:string;
 }
