@@ -1,5 +1,4 @@
 import { Component,OnInit } from '@angular/core';
-import { timeout } from 'rxjs';
 import { DataFetchService } from '../data-fetch.service';
 
 @Component({
@@ -35,7 +34,10 @@ export class ProfileFormComponent implements OnInit {
   updateUser():void{
     console.log(this.user);
     this.dataService.updateUser(this.user).subscribe({
-      next:(user)=>{console.log(user);}
+      next:(user)=>{
+        console.log(user);
+        this.dataService.showSuccess("Data updated successfully !!", "");
+      }
     });
   }
 }

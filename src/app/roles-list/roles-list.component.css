@@ -365,7 +365,8 @@ table tbody tr {
 }
 
 .login-bg {
-        height: 100vh;
+    /* background-image: url("src/assets/images/bannr01.png"); */
+    height: 100vh;
     width: 100%;
     background-position: center;
     background-repeat: no-repeat;
@@ -1047,7 +1048,6 @@ button.btn-close {
     margin-bottom: 10px;
 }
 
-.custom-modal{
-    position: absolute;
-    left: 30%;
+.pointer{
+    cursor: pointer !important;
 }

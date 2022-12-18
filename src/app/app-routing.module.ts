@@ -1,8 +1,8 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { MyProfilePageComponent } from './my-profile-page/my-profile-page.component';
-import { RoleListingsComponent } from './role-listings/role-listings.component';
 import { RolePermissionPageComponent } from './role-permission-page/role-permission-page.component';
+import { RolesListComponent } from './roles-list/roles-list.component';
 import { TestComponent } from './test/test.component';
 
 const routes: Routes = [
@@ -16,7 +16,7 @@ const routes: Routes = [
     path: 'useradministration/role/permission', component: RolePermissionPageComponent
   },
   {
-    path: 'useradministration/role', component: RoleListingsComponent
+    path: 'useradministration/role', component: RolesListComponent
   },
 ];
 

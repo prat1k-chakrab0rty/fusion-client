@@ -13,7 +13,9 @@ import { RolePermissionPageComponent } from './role-permission-page/role-permiss
 import { TestComponent } from './test/test.component';
 import { ModalComponent } from './modal/modal.component';
 import { FormsModule } from '@angular/forms';
-
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ToastrModule } from 'ngx-toastr';
+import { RolesListComponent } from './roles-list/roles-list.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -25,13 +27,16 @@ import { FormsModule } from '@angular/forms';
     MyProfilePageComponent,
     RolePermissionPageComponent,
     TestComponent,
-    ModalComponent
+    ModalComponent,
+    RolesListComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
     FormsModule,
+    BrowserAnimationsModule,
+    ToastrModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent],
