@@ -45,6 +45,15 @@ export class DataFetchService {
     return this.http.put<any>(this.baseApiUrl+'/api/RolePermission/'+updateEmployeeRequest.pId,updateEmployeeRequest);
   }
 
+  addPermission(updateEmployeeRequest:any):Observable<any>{
+    console.log(updateEmployeeRequest);
+    // console.log(updateEmployeeRequest[0].pId);
+    return this.http.post<any>(this.baseApiUrl+'/api/RolePermission/',updateEmployeeRequest);
+  }
+  deletePermission(id:string):Observable<any>{
+    return this.http.delete<any>(this.baseApiUrl+'/api/RolePermission/'+id);
+  }
+
   updateRole(updateEmployeeRequest:any,id:string):Observable<any>{
     console.log(updateEmployeeRequest);
     updateEmployeeRequest.id=id;

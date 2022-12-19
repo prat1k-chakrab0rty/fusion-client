@@ -1,7 +1,7 @@
 import { Component,OnInit } from '@angular/core';
 import { windowCount } from 'rxjs';
 import { DataFetchService } from '../data-fetch.service';
-
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-role-permission-page',
@@ -10,10 +10,13 @@ import { DataFetchService } from '../data-fetch.service';
 })
 export class RolePermissionPageComponent {
   permissions:any;
-  id:any="5ef2fa8e-3142-4f99-95b7-58ccb7458b60"
-  constructor(private dataService:DataFetchService) { }
+  id:any="5bda1df0-4aa5-411c-3768-08dae1779037";
+  constructor(private dataService:DataFetchService,private route: ActivatedRoute) { }
   ngOnInit(): void {
-    this.dataService.getPermissionsByRoleId(this.id)
+    const routeParams = this.route.snapshot.paramMap;
+  const roleIdFromRoute = String(routeParams.get('roleId'));
+  this.id=roleIdFromRoute;
+    this.dataService.getPermissionsByRoleId(roleIdFromRoute)
     .subscribe(
       {
         next:(user)=>{

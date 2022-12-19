@@ -13,7 +13,7 @@ const routes: Routes = [
     path: 'profile', component: MyProfilePageComponent
   },
   {
-    path: 'useradministration/role/permission', component: RolePermissionPageComponent
+    path: 'useradministration/role/permission/:roleId', component: RolePermissionPageComponent
   },
   {
     path: 'useradministration/role', component: RolesListComponent
